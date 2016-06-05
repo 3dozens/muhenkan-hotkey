@@ -1,4 +1,34 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+﻿;**************************
+;ホットキー割り当て一覧
+;**************************
+
+;**************************
+
+;変換 = IME OFF
+;無変換 = IME ON
+
+;無変換 + 変換 = BS
+;無変換 + カタカナ / ひらがな = Del
+
+;無変換 + n = ー
+;無変換 + m = =
+;無変換 + b = 行削除
+;無変換 + . = 行コピー
+
+;無変換 + h = ←
+;無変換 + j = ↓
+;無変換 + k = ↑
+;無変換 + l = →
+;無変換 + u = HOME
+;無変換 + o = END
+
+;右クリック + ホイール↑ = コピー
+;右クリック + ホイール↓ = ペースト
+;左クリック + 右クリック = 選択された文章を検索
+
+;**************************
+
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetTitleMatchMode,2
@@ -66,8 +96,8 @@ vk1Dsc07B & o:: Send, {Blind}{End}	;無変換 + o = END
 ;コピー / ペースト
 ;--------------------------
 
-~LButton & WheelUp:: Send, ^c	;左クリック + ホイール↑ = コピー
-LButton & WheelDown:: Send, ^v	;左クリック + ホイール↓ = ペースト
+~RButton & WheelUp:: Send, ^c	;右クリック + ホイール↑ = コピー
+RButton & WheelDown:: Send, ^v	;右クリック + ホイール↓ = ペースト
 
 ;左クリック + 右クリック = 選択された文章を検索
 LButton & RButton::search()

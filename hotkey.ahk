@@ -81,6 +81,12 @@ vk1Dsc07B & .::
 Send,{Blind}{Home}+{End}
 return
 
+;新規行を追加してそこに移動
+vk1Dsc07B & `;::
+Send, {End}
+Send, {Enter}
+return
+
 ;--------------------------
 ;カーソル移動
 ;--------------------------

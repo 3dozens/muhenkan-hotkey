@@ -22,9 +22,8 @@
 ;無変換 + u = HOME
 ;無変換 + o = END
 
-;右クリック + ホイール↑ = コピー
-;右クリック + ホイール↓ = ペースト
-;右クリック + 左クリック = 選択された文章を検索
+;右クリック + ホイール↑ = Ctrl + +
+;右クリック + ホイール↓ = Ctrl + -
 
 ;**************************
 
@@ -62,7 +61,7 @@ vk1Dsc07B & vkF2sc070:: Send, {Blind}{Del}	;無変換 + カタカナ / ひらが
 ;入力しづらい文字の割り当て
 ;--------------------------
 
-vk1Dsc07B & i:: Send, {Blind}-	;無変換 + n = ー
+vk1Dsc07B & i:: Send, {Blind}-	;無変換 + i = ー
 
 ;--------------------------
 ;行編集
@@ -98,12 +97,27 @@ vk1Dsc07B & u:: Send, {Blind}{Home}	;無変換 + u = HOME
 vk1Dsc07B & o:: Send, {Blind}{End}	;無変換 + o = END
 
 ;--------------------------
-;コピー / ペースト
+;画面拡大 / 縮小
 ;--------------------------
 
 ; なぜか{Ctrl}だとうまくいかない
 ~RButton & WheelUp:: Send, ^{+}	;右クリック + ホイール↑ = 画面拡大
 RButton & WheelDown:: Send, ^-	;右クリック + ホイール↓ = 画面縮小
+
+
+;--------------------------
+;テンキー
+;--------------------------
+vk1Dsc07B & a:: Send, {Blind}1 ;無変換 + a = 1
+vk1Dsc07B & s:: Send, {Blind}2 ;無変換 + a = 2
+vk1Dsc07B & d:: Send, {Blind}3 ;無変換 + a = 3
+vk1Dsc07B & f:: Send, {Blind}4 ;無変換 + a = 4
+vk1Dsc07B & g:: Send, {Blind}5 ;無変換 + a = 5
+vk1Dsc07B & q:: Send, {Blind}6 ;無変換 + a = 6
+vk1Dsc07B & w:: Send, {Blind}7 ;無変換 + a = 7
+vk1Dsc07B & e:: Send, {Blind}8 ;無変換 + a = 8
+vk1Dsc07B & r:: Send, {Blind}9 ;無変換 + a = 9
+vk1Dsc07B & t:: Send, {Blind}0 ;無変換 + a = 0
 
 ;--------------------------
 ;その他

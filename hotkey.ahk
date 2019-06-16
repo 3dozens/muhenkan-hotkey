@@ -62,6 +62,7 @@ vk1Dsc07B & vkF2sc070:: Send, {Blind}{Del}	;無変換 + カタカナ / ひらが
 ;--------------------------
 
 vk1Dsc07B & i:: Send, {Blind}-	;無変換 + i = ー
+vk1Dsc07B & `;:: Send, {Blind}{Enter} ;無変換 + ; = Enter
 
 ;--------------------------
 ;行編集
@@ -79,8 +80,8 @@ vk1Dsc07B & .::
 Send,{Blind}{Home}+{End}
 return
 
-;無変換 + ; = 新規行を追加してそこに移動
-vk1Dsc07B & `;::
+;無変換 + : = 新規行を追加してそこに移動
+vk1Dsc07B & vkBAsc028::
 Send, {End}
 Send, {Enter}
 return

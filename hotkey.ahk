@@ -125,3 +125,4 @@ vk1Dsc07B & t:: Send, {Blind}0 ;無変換 + a = 0
 ;--------------------------
 ;vkF0sc03A:: Send, {Blind}{Ctrl}
 RButton & LButton:: Send, {F11} ;右クリック + 左クリック = F11(フルスクリーン切り替え)
+sc03a::Ctrl ;Capslock to Ctrl

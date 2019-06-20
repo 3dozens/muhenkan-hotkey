@@ -62,7 +62,8 @@ vk1Dsc07B & vkF2sc070:: Send, {Blind}{Del}	;無変換 + カタカナ / ひらが
 ;--------------------------
 
 vk1Dsc07B & i:: Send, {Blind}-	;無変換 + i = ー
-vk1Dsc07B & `;:: Send, {Blind}{Enter} ;無変換 + ; = Enter
+vk1Dsc07B & `;:: Send, `; ;無変換 + ; = ;
+`;:: Send, {Blind}{Enter} ;;= Enter
 
 ;--------------------------
 ;行編集

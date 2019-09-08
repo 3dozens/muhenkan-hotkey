@@ -66,6 +66,8 @@ vk1Dsc07B & `;:: Send, `; ;無変換 + ; = ;
 `;:: Send, {Blind}{Enter} ;;= Enter
 vkBAsc028:: Send, {Blind}{BS} ;: = Back Space
 vk1Dsc07B & vkBAsc028:: Send, `: ;無変換 + : = :
+Shift & vkE2sc073:: Send, {Blind}{vkE2sc073} ;_ = \ 動かない
+vkE2sc073:: Send, {Blind}_ ;\ = _
 
 
 ;--------------------------

@@ -108,8 +108,10 @@ vk1Dsc07B & o:: Send, {Blind}{End}	;無変換 + o = END
 ;--------------------------
 
 ; なぜか{Ctrl}だとうまくいかない
-~RButton & WheelUp:: Send, ^{+}	;右クリック + ホイール↑ = 画面拡大
-RButton & WheelDown:: Send, ^-	;右クリック + ホイール↓ = 画面縮小
+~LButton & WheelUp:: Send, ^{+}	;左クリック + ホイール↑ = 画面拡大
+LButton & WheelDown:: Send, ^-	;左クリック + ホイール↓ = 画面縮小
+~RButton & WheelUp:: Send, {PgUp};右クリック + ホイール↑ = Page Up
+RButton & WheelDown:: Send, {PgDn}	;右クリック + ホイール↓ = Page Down
 
 
 ;--------------------------
